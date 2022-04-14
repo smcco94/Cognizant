@@ -11,7 +11,7 @@ setup(
     version="0.0.1",
     author="Sergio Castro",
     author_email="sergiomcastro94@gmail.com",
-    description="editar",
+    description="",
     long_description=page_description,
     long_description_content_type="text/markdown",
     url="",
