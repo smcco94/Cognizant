@@ -16,7 +16,7 @@ pip install cryp_to
 ## Usage
 
 ```python
-from cryp_to import cryp_to, cryp_turn
+from crypto import cryp_to, cryp_turn
 cryp_to.crypS()
 cryp_turn.crypS()
 ```
