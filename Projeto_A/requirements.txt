@@ -1,1 +1,1 @@
-editar
+python >= 3.8
