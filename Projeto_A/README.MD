@@ -1,27 +1,28 @@
-# package_name
+# cryp_to
 
 Description. 
-The package package_name is used to:
-	- 
-	-
+The package cryp_to is used to:
+	- encrypt passwords
+	- Decrypt passwords
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package_name
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install cryp_to
 
 ```bash
-pip install package_name
+pip install cryp_to
 ```
 
 ## Usage
 
 ```python
-from package_name.module1_name import file1_name
-file1_name.my_function()
+from cryp_to import cryp_to, cryp_turn
+cryp_to.crypS()
+cryp_turn.crypS()
 ```
 
 ## Author
-My_name
+Sergio Castro
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
