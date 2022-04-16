@@ -1,4 +1,0 @@
-Criar tabela   
-    Create table (Tipos: int, varchar, datetime)
-    - CREATE TABLE nome_tabela (nome varchar(20), nascimento date)
-    - INSERT INTO nome_tabela (nome, nascimento) VALUES ('Nathaly','1990-05-22')
