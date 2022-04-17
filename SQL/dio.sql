@@ -12,6 +12,9 @@ INSERT INTO pessoa (nome,nascimento) VALUES ('Marcela', '1989-10-28');
 -- atualizar dados
 update pessoa set nome = 'Sergio Castro' where id = 1;
 
+-- Visualiza tabela
+SELECT * FROM pessa;
+
 SELECT * FROM pessoa WHERE id=5; -- Verifica se a linha é essa mesma
 DELETE FROM pessoa WHERE id=5; -- Deleta, não é recuperavel !!
 -- Neste caso o id é ÚNICO, se adicionar qualquer outra linha o id seria 6 neste caso 
@@ -25,3 +28,14 @@ ALTER TABLE `pessoa` ADD `genero` VARCHAR(1) NOT NULL AFTER `nascimento`;
 
 -- agrupamento de genero por id
 SELECT COUNT(id), genero FROM `pessoa` GROUP BY genero;
+
+--ligar tabelas
+SELECT * FROM Videos JOIN author ON Videos.fk_author = author.id_author; -- seleciona tudo
+SELECT Videos.title, author.name FROM `Videos` JOIN author ON Videos.fk_author = author.id_author; -- seleciona 1 coluna de cada
+SELECT * FROM Videos JOIN seo ON Videos.fk_seo = seo.id_seo; --ligação de tabelas
+SELECT Videos.title, seo.category FROM Videos JOIN seo ON Videos.fk_seo = seo.id_seo; -- ligação por coluna
+
+--- ligar multiplas tabelas
+SELECT Videos.title, seo.category, author.name FROM Videos 
+JOIN seo ON Videos.fk_seo = seo.id_seo 
+JOIN author on Videos.fk_author = author.id_author;

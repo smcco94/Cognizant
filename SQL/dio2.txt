@@ -1,0 +1,15 @@
+-- COMAND LINE
+-- /opt/lammp/bin/mysql -u root
+-- MariaDB ou MySql
+--não esquecer ;
+
+show databases; mostra tabelas
+use minha_database; seleciona database
+show tables; mostra tabelas do database
+CREATE TABLE tabela (id INT NOT NULL PRIMARY KEY AUTOINCREMENT, nome varchar(20)); cria tabelas
+drop table tabela; deleta tabelas
+drop database minha_database; deleta tabelas
+delete from tabela where nome='Nome_Coluna';
+alter table tabela add carga_horaria INT(5) after coluna;
+update pessoa set coluna=20;
+update pessoa set coluna=20 where id=3;
